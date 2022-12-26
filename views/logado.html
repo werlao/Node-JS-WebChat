@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Chat</title>
+        <link rel="stylesheet" type="text/css" href="../public/style/logado.css" />
+        <script type="text/javascript" src="../public/script/jquery.js"></script>
+        <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+        <script type="text/javascript" src="../public/script/logado.js"></script>
+    </head>
+    <body>
+        <div id="box">
+            <div id="lateral">
+                <div id="user">
+                    <div id="imagem">
+                        <img src="../public/images/pessoa.png" />
+                    </div>
+                    <div id="texto">
+                        <h1 class="myName"></h1>
+                        <h2>Meu status</h2>
+                    </div>
+                </div>
+                <ul id="listaContatos"></ul>
+            </div>
+            <div id="protetor">
+                <div id="texto">
+                    <h1>Clique em um contato para começar a conversa!</h1>
+                    <h2>Feito por Wesley.</h2>
+                </div>
+            </div>
+            <div id="chat">
+                <div id="usuario">
+                    <div id="lineTop">
+                        <i class="hashtag fas fa-hashtag"></i>
+                        <h1 class="conversaTitle">Trabalho</h1> 
+                        <div id="first" class="icone">
+                            <i class="far fa-user"></i>
+                            <span class="number">5</span>
+                        </div>
+                        <div class="icone">
+                            <i class="far fa-comment-alt"></i>
+                            <span class="number">5.7 K</span>
+                        </div>
+                    </div>
+                    <div id="lineBottom">
+                        <h2>Descricao do grupo</h2>
+                    </div>
+                </div>
+                <ul id="conversa">
+                    <li>
+                        <div id="header">
+                            <img src="../public/images/pessoa.png" />
+                            <div id="info">
+                                <span class="nome">Pedro</span>
+                                <span class="data">Hoje às 13:41</span>
+                            </div>
+                        </div>
+                        <div id="mensagem">
+                            <p>Esta é uma mensagem</p>
+                            <p>Esta é outra mensagem</p>
+                        </div>
+                    </li>                    
+                    <li class="me">
+                        <div id="header">
+                            <img src="../public/images/pessoa.png" />
+                            <div id="info">
+                                <span class="nome">Wesley Silva</span>
+                                <span class="data">Hoje às 13:41</span>
+                            </div>
+                        </div>
+                        <div id="mensagem">
+                            <p>Esta é uma mensagem</p>
+                            <p>Esta é outra mensagem</p>
+                        </div>
+                    </li>     
+                </ul>
+                <div id="enviar">
+                    <div id="area">
+                        <textarea idTo="0" placeholder="Diga algo..."></textarea>
+                        <button><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

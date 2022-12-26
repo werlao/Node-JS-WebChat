@@ -1,0 +1,382 @@
+@import "../style/fontes/fontawesome/css/all.css";
+
+@font-face{
+    font-family: FuturaPT;
+    src: url("../style/fontes/FuturaPT.otf") format("opentype");
+}
+
+@font-face{
+    font-family: MuseoSans;
+    src: url("../style/fontes/museosans.ttf") format("truetype");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background-color: #1a1a1a;
+}
+
+div#box{
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    top: 5%;
+    left: 5%;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.05);
+}
+
+div#box div#lateral{
+    background-color: #333;
+    width: 25%;
+    height: 100%;
+    float: left;
+    display: block;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+div#box div#lateral div#user{
+    height: 40px;
+    width: calc(100% - 30px);
+    display: block;
+    background: #242424;
+    border-top-left-radius: 5px;
+    padding: 25px 15px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+div#box div#lateral div#user div#imagem{
+    height: 40px;
+    width: 40px;
+    float: left;
+    display: block;
+}
+
+div#box div#lateral div#user div#imagem img{
+    width: 38px;
+    height: 38px;
+    border: 1px solid #333;
+    border-radius: 100%;
+}
+
+div#box div#lateral div#user div#texto{
+    height: 40px;
+    width: calc(100% - 55px);
+    padding-left: 15px;
+    float: left;
+    display: block;
+}
+
+div#box div#lateral div#user div#texto h1{
+    font-family: FuturaPT;
+    color: #fff;
+    font-size: 18px;
+}
+
+div#box div#lateral div#user div#texto h2{
+    font-family: FuturaPT;
+    color: #ccc;
+    font-size: 14px;
+}
+
+div#box div#lateral ul#listaContatos{
+    width: 100%;
+    height: calc(100% - 90px);
+    display: block;
+}
+
+div#box div#lateral ul#listaContatos li{
+    list-style-type: none;
+    display: block;
+    height: 20px;
+    padding: 8px 15px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+div#box div#lateral ul#listaContatos li:hover{
+    background: rgba(0, 0, 0, 0.1);
+}
+
+div#box div#lateral ul#listaContatos li.title{
+    font-family: FuturaPT;
+    letter-spacing: 1px;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #a1a1a1;
+    font-weight: bold;
+    padding: 30px 15px 5px 15px;
+}
+
+div#box div#lateral ul#listaContatos li.title:hover{
+    background: transparent;
+}
+
+div#box div#lateral ul#listaContatos li div#imagem{
+    height: 20px;
+    width: 20px;
+    float: left;
+    display: block;
+}
+
+div#box div#lateral ul#listaContatos li div#imagem img{
+    width: 18px;
+    height: 18px;
+    border: 1px solid #333;
+    border-radius: 100%;
+}
+
+div#box div#lateral ul#listaContatos li div#texto{
+    height: 20px;
+    width: calc(100% - 35px);
+    padding-left: 15px;
+    float: left;
+    display: block;
+}
+
+div#box div#lateral ul#listaContatos li div#texto h1{
+    font-family: FuturaPT;
+    font-size: 18px;
+    color: #737071;
+}
+
+div#box div#lateral ul#listaContatos li.new div#texto h1{
+    color: #fff;
+}
+
+div#box div#lateral ul#listaContatos li div#texto h1 span.number{
+    font-size: 13px;
+    font-family: FuturaPT;
+    color: #fff;
+    text-align: center;
+    padding: 2px;
+    background: #fb4347;
+    border-radius: 100%;
+    min-width: 16px;
+    display: inline-block;
+    transform: scale(.8);
+    margin-left: 10px;
+}
+
+div#box div#lateral ul#listaContatos li div#texto h1 span.number.of{
+    display: none;
+}
+
+div#box div#protetor{
+    background: rgb(160, 160, 160);
+    width: 75%;
+    height: 100%;
+    float: left;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: flex;
+}
+
+div#box div#protetor div#texto{
+    margin: auto auto;
+    text-align: center;
+}
+
+div#box div#protetor div#texto h1{
+    font-family: FuturaPT;
+    color: rgb(32, 32, 32);
+    font-size: 26;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+div#box div#protetor div#texto h2{
+    font-family: FuturaPT;
+    color: rgb(156, 70, 0);
+    font-size: 12;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+div#box div#chat{
+    background: rgb(160, 160, 160);
+    width: 75%;
+    height: 100%;
+    float: left;
+    display: block;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: none;
+}
+
+div#box div#chat div#usuario{
+    height: 56px;
+    width: calc(100% - 50px);
+    padding: 17px 25px;
+    border-bottom: 1px solid #ddd;
+}
+
+div#box div#chat div#usuario div#lineTop{
+    height: 26px;
+    width: 100%;
+    display: block;
+}
+
+div#box div#chat div#usuario div#lineTop i.hashtag{
+    color: #c5c5c5;
+    font-size: 24px;
+    padding-top: 2px;
+    float: left;
+}
+
+div#box div#chat div#usuario div#lineTop h1{
+    font-family: MuseoSans;
+    display: block;
+    float: left;
+    color: #000;
+    font-size: 26px;
+    letter-spacing: -1px;
+    font-weight: 300;
+    margin-left: 3px;
+}
+
+div#box div#chat div#usuario div#lineTop div.icone{
+    font-family: FuturaPT;
+    display: block;
+    float: left;
+    padding-top: 3px;
+    margin-left: 15px;
+    color: #333;
+}
+
+div#box div#chat div#usuario div#lineTop div.icone#first{
+    margin-left: 30px;
+}
+
+div#box div#chat div#usuario div#lineTop div.icone span{
+    margin-left: 2px;
+    font-weight: bold;
+}
+
+div#box div#chat div#usuario div#lineBottom{
+    height: 26px;
+    width: 100%;
+    display: block;
+    float: left;
+}
+
+div#box div#chat div#usuario div#lineBottom h2{
+    color: #666;
+    font-size: 20px;
+    font-family: FuturaPT;
+}
+
+div#box div#chat ul#conversa{
+    width: 100%;
+    height: calc(100% - 181px);
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+div#box div#chat ul#conversa li{
+    list-style-type: none;
+    padding: 15px 25px;
+    width: calc(100% - 50px);
+    transition: .3s;
+    cursor: pointer;
+}
+
+div#box div#chat ul#conversa li:hover,
+div#box div#chat ul#conversa li.me{
+    background: #fcfde3;
+}
+
+div#box div#chat ul#conversa li div#header{
+    height: 30px;
+    width: 100%;
+}
+
+div#box div#chat ul#conversa li div#header img{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    float: left;
+}
+
+div#box div#chat ul#conversa li div#header div#info{
+    height: 30px;
+    width: calc(100% - 45px);
+    padding-left: 15px;
+    padding-top: 6px;
+    float: left;
+}
+
+div#box div#chat ul#conversa li div#header div#info span.nome{
+    font-family: MuseoSans;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+div#box div#chat ul#conversa li div#header div#info span.data{
+    margin-left: 5px;
+    color: #666;
+    font-family: FuturaPT;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+div#box div#chat ul#conversa li div#mensagem{
+    padding-left: 45px;
+    margin-top: 7px;
+}
+
+div#box div#chat ul#conversa li div#mensagem p{
+    font-family: FuturaPT;
+    display: block;
+    color: #000;
+    font-size: 18px;
+    padding-top: 3px;
+}
+
+div#box div#chat div#enviar{
+    height: 60px;
+    width: calc(100% - 50px);
+    padding: 15px 25px;
+}
+
+div#box div#chat div#enviar div#area{
+    background: #f1f1f1;
+    border-radius: 3px;
+    width: 100%;
+    height: 100%;
+}
+
+div#box div#chat div#enviar div#area textarea{
+    font-family: MuseoSans;
+    border: 0;
+    padding: 20px 15px;
+    height: calc(100% - 40px);
+    width: calc(100% - 90px);
+    background: transparent;
+    color: #a0a0a0;
+    resize: none;
+}
+
+div#box div#chat div#enviar div#area button{
+    cursor: pointer;
+    border: 0;
+    border-radius: 100%;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    padding: 11px 13px 11px 17px;
+    background: linear-gradient(to right, #f9bd81 0%, #fe9086 100%);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+    margin: 9px;
+    float: right;
+}
