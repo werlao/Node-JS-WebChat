@@ -57,5 +57,5 @@ io.on("connection", client => {
 });
 
 http.listen(4000, function(){
-    console.log("Servidor ativo na porta 80");
+    console.log("Servidor rodando...");
 });
