@@ -64,7 +64,7 @@ $(function(){
         $("ul#conversa").append(elm);
     };
 
-    var socket = io.connect("http://localhost/");
+    var socket = io.connect("http://localhost:4000");
 
     socket.emit("message", JSON.stringify({type: "c", data: nome}));
     socket.on("message", mensagem => {
