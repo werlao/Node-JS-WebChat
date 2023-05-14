@@ -1,7 +1,9 @@
-## Projeto para testes - WebChat
+<h1 align="center"> Projeto WebChat </h1>
 
-# Dependencias necessárias:
+<h3>📁 Projeto em desenvolvimento </h3>
 
-ejs, express, nodemon, path, socketio
+<h3>🧾 Descrição</h3>
+Um projeto onde é apresentado uma tela de troca de mensagens entre usuários, ao acessar é solicitado o 'nome/id' do usuário, assim ambos trocam mensagem
 
-# Para iniciar: npm run start
+<h3>💻 Tecnologias utilizadas:</h3>
+HTML, CSS, NODEJS
